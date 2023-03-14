@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="author" content="Min Dai" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer</title>
+    <link rel="stylesheet" href="soccer.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <img src="sl.jpg" class="logo">
+            <div>
+                <a href="#" class="home">Home</a>
+                <button class="btnPrimary" id="b1">Login</button>
+                <button class="btnPrimary" , id="b2">Cart</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="popup1" id="popup1">
+            <div class="account1">
+                <h6>Login</h6>
+                <button class="btn4">X</button>
+            </div>
+            <div class="signin">
+                <input placeholder="Email" name="email" type="email" />
+                <input placeholder="Password" id="password1" type="password" />
+                <span id="message1"></span>
+                <button id="login">Login</button>
+            </div>
+            <div class="forget">
+                <h6><span>or</span></h6>
+                <div>
+                    <h5>Forget your password?</h5>
+                    <button id="btn7">Click Here</button>
+                </div>
+            </div>
+            <div class="signup">
+                <h6><span>or</span></h6>
+                <div>
+                    <h5>Don't have an account?</h5>
+                    <button id="btn9">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="popup4" id="popup4">
+            <div class="account1">
+                <h6>Reset Password</h6>
+                <button class="btn8">X</button>
+            </div>
+            <div class="reset">
+                <div class="enter">
+                    <label> Enter email</label>
+                    <input placeholder="Email" name="email" type="email"  id="e"/>
+                </div>
+                <button id="code">send code to your email address</button>
+                <div class="enter">
+                    <label> Enter code</label>
+                    <input placeholder="code" name="code" type="code" id="c" />
+                </div>
+                <div class="enter">
+                    <label> New Password</label>
+                    <input placeholder="Password" name="Password" type="Password" id="n" />
+                </div>
+                <div class="enter">
+                    <label>Confirm Password</label>
+                    <input placeholder="Password" name="Password" type="Password" id="p" />
+                </div>
+                <button id="set">Reset Password</button>
+            </div>
+        </div>
+
+        <div class="popup5" id="popup5">
+            <div class="account1">
+                <h6>User Register</h6>
+                <button class="btn10">X</button>
+            </div>
+            <div class="register">
+                <div class="enter">
+                    <label>Username</label>
+                    <input placeholder="Name" name="Name" type="text"  id="u"/>
+                </div>
+                <div class="enter">
+                    <label> Email</label>
+                    <input placeholder="Email" name="Email" type="Email" id="m" />
+                </div>
+                <div class="enter">
+                    <label> New Password</label>
+                    <input placeholder="Password" name="Password" type="Password" id="w" />
+                </div>
+                <div class="enter">
+                    <label>Confirm Password</label>
+                    <input placeholder="Password" name="Password" type="Password" id="f" />
+                </div>
+                <div class="enter">
+                    <label>Age</label>
+                    <input placeholder="Age" name="Age" type="Age" id="a" />
+                </div>
+                <button id="reg">Register</button>
+            </div>
+        </div>
+
+        <div class="popup3" id="popup3">
+            <div class="account1">
+                <h6>Shopping Cart</h6>
+                <button class="btn6">X</button>
+            </div>
+            <div class="basket">
+                <div class="basket-labels">
+                    <ul>
+                        <li class="item item-heading">Item: </li>
+                        <li class="price">Price:</li>
+                        <li class="quantity">Quantity:</li>
+                        <li class="subtotal">Subtotal:</li>
+                    </ul>
+                </div>
+                <div class="basket-product">
+                    <ul class="product-details">
+                        <li>beginner/age:5-7/Thursday 6-8pm</li>
+                        <li id="price">256</li>
+                        <li id="quantity">1</li>
+                        <li id="subtotal">Subtotal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shopping">
+                <h6><span>or</span></h6>
+                <div>
+                    <h5>Still Not Ready</h5>
+                    <button>Continue Searching</button>
+                </div>
+            </div>
+            <div class="checkout">
+                <h6><span>or</span></h6>
+                <div>
+                    <h5>Ready to Pay?</h5>
+                    <button id="btn11">Check Out</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup6" id="popup6">
+            <div class="account1">
+                <h6>Make Payment</h6>
+                <button class="btn12">X</button>
+            </div>
+            <div class="payment">
+                <form action="" method="post" class="enter" id="change">
+                    <label>Payment Method</label>
+                    <select name="Payment Method"  id="sel">
+                        <option value="Please Select">Please Select </option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Debit">Debit</option>
+                    </select>
+                </form><br>
+                <div class="enter">
+                    <label> Name on card</label>
+                    <input placeholder="Name" name="Name" type="text" id="cm" />
+                </div>
+                <div class="enter">
+                    <label> Card Number</label>
+                    <input placeholder="Card Number" name="Card Number" type="text" id="cn" />
+                </div>
+                <div class="enter">
+                    <label>Expire Date</label>
+                    <input placeholder="Expire Date" name="Expire Date" type="date" id="d" />
+                </div>
+                <div class="enter">
+                    <label>Security Code</label>
+                    <input placeholder="Security Code" name="Security Code" type="text" id="s" />
+                </div>
+                <button id="pay">pay</button>
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="introduction">
+                <h3>Soccer Training</h3>
+                <p>
+                    Want to make your life perfect? Want to brighten your life?
+                    soccer will make you do it.
+                    It's not just a sport, it's an art.
+                    Let us use sports to keep fit and interpret life with art.
+                    Let us sway our youth and chase our dreams together on the green field.
+                </p>
+                <div class="button">
+                    <button class="btn1">Choose Course</button>
+                    <button class="btn2">Choose Event</button>
+                </div>
+            </div>
+            <div class="popup" id="popup">
+                <div class="account1">
+                    <h6>Choose Course</h6>
+                    <button class="btn3">X</button>
+                </div>
+                <div class="userinfo">
+                    <div>
+                        <form action="" method="post">
+                            <label>Age Level</label>
+                            <select name="age" class="dropbox1" id="list">
+                                <option value="Please Select">Please Select </option>
+                                <option value="5-7">5-7</option>
+                                <option value="8-12">8-12</option>
+                                <option value="13-17">13-17</option>
+                            </select>
+                        </form><br>
+                        <form action="" method="post">
+                            <label>Skill Level</label>
+                            <select name="skill" class="dropbox" id="list1">
+                                <option value="Please Select">Please Select </option>
+                                <option value="beginner">beginner</option>
+                                <option value="intermediate">intermediate</option>
+                                <option value="advanced">advanced </option>
+                            </select>
+                        </form><br>
+                        <form action="" method="post">
+                            <label>Class Time</label>
+                            <select name="time" class="dropbox" id="list2">
+                                <option value="Please Select">Please Select</option>
+                                <option value="Tuesday 6pm-8pm">Tuesday 6pm-8pm</option>
+                                <option value="Wednsday 6pm-8pm">Wednsday 6pm-8pm</option>
+                                <option value="Thursday 6pm-8pm">Thursday 6pm-8pm</option>
+                                <option value="Saturday 2pm-5pm">Saturday 2pm-5pm</option>
+                            </select>
+                        </form><br>
+                    </div>
+                    <button id="search1">Search Course</button>
+                </div>
+                <div class="already">
+                    <h6><span>result</span></h6>
+                    <div class="result">
+                        <div class="result">
+                            <p id="r">Age Level</p>
+                            <p id="r1">Skill Level</p>
+                            <p id="r2">Class Time</p>
+                            <!-- <p>Place</p> -->
+                        </div>
+                        <button>ADD</button>
+                    </div>
+                    <!-- <div>
+                        <div class="result0">
+                            <p id="r">Age Level</p>
+                           
+                            <p id="r1">Skill Level</p>
+
+                            <p id="r2">Class Time</p>
+                            <button>ADD</button>
+                        </div>
+                       
+                    </div> -->
+
+                </div>
+
+
+            </div>
+            <div class="popup2" id="popup2">
+                <div class="account1">
+                    <h6>Choose Event</h6>
+                    <button class="btn5">X</button>
+                </div>
+                <div class="userinfo1">
+                    <div>
+                        <form action="" method="post">
+                            <label>Event Date</label>
+                            <select name="date" class="dropbox2" id="list3">
+                                <option value="Please Select">Please Select </option>
+                                <option value="18 March,2023">18 March,2023</option>
+                                <option value="25 April,2023">25 April,2023</option>
+                                <option value="30 June,2023">30 June,2023</option>
+                            </select>
+                        </form><br>
+                        <form action="" method="post">
+                            <label>Event Site</label>
+                            <select name="event" class="dropbox3" id="list4">
+                                <option value="Please Select">Please Select </option>
+                                <option value="20 Sherbrooke Est, Montreal">20 Sherbrooke Est, Montreal</option>
+                                <option value="123 University, Quebec">123 University, Quebec</option>
+                                <option value="678 St-Catherine, Montreal">678 St-Catherine, Montreal</option>
+                            </select>
+                        </form><br>
+                    </div>
+                    <button id="search2">Search Event</button>
+                </div>
+                <div class="already1">
+                    <h6><span>result</span></h6>
+                    <div>
+                        <div class="result1">
+                            <p id="r3">Event Date</p>
+                            <p id="r4">Event Site</p>
+                            <!-- <p>Place</p> -->
+                        </div>
+                        <button>ADD</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lessons">
+            <h2><span>Interactive Soccer Courses</span></h2>
+            <div>
+                <p>
+                    Main course type:<br>
+                    • $234 / 9 classes<br>
+                    • $468 / 18 classes<br><br>
+                    Course frequency:<br>
+                    • One class per week<br>
+                    • 90 minutes per class<br><br>
+                    Training content:<br>
+                    • Coordination, agility<br>
+                    • Knowledge and familiarity of football, sense of football<br>
+                    • Team consciousness and willpower shaping
+                </p>
+                <img src="sa.jpg">
+            </div>
+        </section>
+        <section class="leaning">
+            <h2><span>Amazing exploration</span></h2>
+            <div>
+                <img src="sb.jpg">
+                <p>
+                    Sports events<br>
+                    • Competition with another team in same club<br>
+                    • Competition with another club<br>
+                    • Soccer tournament<br>
+                    • Watching high-lever Soccer competition<br><br>
+                    Traditional ceremonies<br>
+                    • New year/Christmas events<br>
+                    • Special day events (e.g., Birthday Party)
+                </p>
+
+            </div>
+        </section>
+        <section class="resources">
+            <h2><span>Resources</span></h2>
+            <div>
+                <p>
+                    Coach qualification<br>
+                    • Felix, assistant coach of China Women's National Team from 2019-2021,<br>
+                    worked in many soccer clubs in China.<br><br>
+                    • William, currently registered player for Canada's AAA football match,<br>
+                    Municipal registered soccer referee,<br>
+                    the current soccer youth training coach of the primary school Sainte-Anne.
+                </p>
+                <img src="sc.jpg">
+            </div>
+        </section>
+        <div class="line"></div>
+        <section class="us">
+
+            <ul class="column">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <ul class="column">
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Help and Support</a></li>
+            </ul>
+            <ul class="column">
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+
+        </section>
+
+    </main>
+    <div class="footer">
+        <span>&#169;2023, BF Athletique et Communication Inc. All rights reserved</span>
+    </div>
+  
+    <script src="soccer.js"></script>
+</body>
+
+</html>
